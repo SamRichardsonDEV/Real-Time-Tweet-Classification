@@ -8,6 +8,4 @@ This project utilises elements of the Hadoop Ecosystem and the Tweepy 2.0 API to
 
 ASOS is a British Fashion Retailer who frequently get tweeted at with various complaints regarding user orders. Despite this, after a quick look online you will find that they rarely respond to offer assistance.
 
-![Tweet Example](https://github.com/SamRichardsonDEV/Real-Time-Tweet-Classification/tree/main/Images/Tweet_Example.png)
-
 <img src="./Images/Tweet_Example.png">
