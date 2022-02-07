@@ -13,5 +13,29 @@ ASOS is a British Fashion Retailer who frequently get tweeted at with various co
 This projects solution is to gather tweets in real-time and perform ML / NLP to classify whether or not a tweet is a complaint / if someone requires assistance with an order. This can then be output to a database so that bots can later be used to deliver automated responses.
 
 # Fundamental Architecture / Design
-
+The projects design is made up of multiple components as outlined below.
 <img src="./Images/Architecture.png">
+
+1. Tweepy 2.0 API.
+2. Apache Kafka
+3. Apache Spark (Structured Streamimg) + SparkML
+4. Datastax Cassandra
+
+<p align="center">Tweepy 2.0</p>
+
+Tweepy is an open-sourced easy to use python library that allows you to utilise the Twitter API. This API allows you to pull specific fields such as tweet text, username, whether a tweet is a retweet.etc. This is utilised to pull text in real-time as well as to build up a dataset of sample tweets for us to classify.
+
+<p align="center">Apache Kafka</p>
+
+Kafka is an open-source distributed event streaming platform used for high-performance data pipelines alongside streaming analytics and integration. It allows for a extremely high throughput at low latencies, is highly scalable and fault tolerant making it ideal for gathering and processing large streams of twitter data in this project.
+
+Importantly, it uses a pub-sub model organised around topics, producers and consumers. All kafka messages are organised into a given topic where consumers pull messages and producers push messages.
+
+<img src="./Images/Topic_Explained.png">
+
+<p align="center">Apache Spark + SparkML</p>
+
+
+
+<p align="center">Datastax Cassandra</p>
+
