@@ -37,7 +37,8 @@ For this to work however, it is worth noticing that zookeeper is required. Zooke
 
 <p align="center">Apache Spark + SparkML</p>
 
-Our consumer is that of Apache Spark utilising Structured Spark Streaming. Spark is an analytics engine for large-scale data processing and provides implicit parallelism and fault tolerance.
+Our consumer is that of Apache Spark utilising Structured Spark Streaming. Spark is an analytics engine for large-scale data processing and provides implicit parallelism and fault tolerance. We utilise PySpark and Structured Spark Streaming to perform ML transformations on our streaming data based on a pre-set model created in SparkML, as we can save this model and then pass the data through the same transformations to perform ETL in real-time.
 
 <p align="center">Datastax Cassandra</p>
 
+Datastax Cassandra is the choice for storage, where microbatches of streaming data will be output to in near real-time.
