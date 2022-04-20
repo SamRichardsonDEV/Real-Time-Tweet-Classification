@@ -43,3 +43,5 @@ A consideration other engineers may want to consider is whether the throughput o
 <p align="center">Datastax Cassandra</p>
 
 Datastax Cassandra is the choice for storage, where microbatches of streaming data will be output to in near real-time. The output of which can be seen below.
+
+<img src="./Images/Cassandra_Table.png">
